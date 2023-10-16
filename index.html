@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>Write your comment</h1> -->
+    <form id="comments-form" autocomplete="off">
+      <input type="text" name="userCommentName" placeholder="Name" />
+      <textarea
+        name="commetContent"
+        placeholder="Content for your comment"
+      ></textarea>
+      <div id="error-commet-name"></div>
+      <div id="error-commet-content"></div>
+      <button type="button">Send</button>
+    </form>
+    <section class="comments">
+      <h1><span id="comments-counter">0</span> comments</h1>
+      <div id="comments-display">No commnets yet</div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
